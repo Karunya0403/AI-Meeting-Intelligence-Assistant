@@ -1,149 +1,122 @@
-\# 🧠 AI Meeting Intelligence Assistant
+# 🧠 AI Meeting Intelligence Assistant
 
+> An AI-powered meeting analysis application built with **Python**, **Streamlit**, and **Machine Learning** that automatically generates meeting summaries, extracts action items, analyzes sentiment, and identifies key discussion topics from meeting transcripts.
 
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?logo=streamlit)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-Machine%20Learning-F7931E?logo=scikitlearn)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-An AI-powered meeting analysis application built with \*\*Python\*\*, \*\*Streamlit\*\*, and \*\*scikit-learn\*\*. The application analyzes meeting transcripts to generate concise summaries, extract action items, identify key discussion topics, and perform sentiment analysis.
+---
 
+# 📖 Overview
 
+Meetings often generate large amounts of information, making it difficult to quickly identify key decisions, assigned tasks, and important discussion points.
 
-\---
+The **AI Meeting Intelligence Assistant** simplifies this process by automatically analyzing meeting transcripts and presenting meaningful insights through an interactive Streamlit application.
 
+The application performs multiple Natural Language Processing (NLP) tasks including:
 
+- Meeting summarization
+- Action item extraction
+- Sentiment analysis
+- Topic identification
 
-\## ✨ Features
+---
 
+# ✨ Features
 
+- 📌 Automatic Meeting Summary Generation
+- 📝 Action Item Extraction using Regular Expressions
+- 😊 Sentiment Analysis using Logistic Regression
+- 🔑 Keyword & Topic Extraction using TF-IDF
+- 💻 Interactive Streamlit Web Interface
+- 🖥️ Command-Line Version Included
+- ⚡ Lightweight and Easy to Run
 
-\- 📌 Meeting Summary Generation
+---
 
-\- 📝 Action Item Extraction
+# 🏗️ System Workflow
 
-\- 😊 Sentiment Analysis using Logistic Regression
-
-\- 🔑 Keyword \& Topic Extraction using TF-IDF
-
-\- 💻 Interactive Streamlit Web Interface
-
-\- 🖥️ Command-Line Version Included
-
-
-
-\---
-
-
-
-\## 🛠️ Technologies Used
-
-
-
-\- Python
-
-\- Streamlit
-
-\- scikit-learn
-
-\- Regular Expressions (Regex)
-
-\- CountVectorizer
-
-\- TF-IDF Vectorizer
-
-
-
-\---
-
-
-
-\## 📂 Project Structure
-
-
-
+```text
+                Meeting Transcript
+                        │
+                        ▼
+              Text Preprocessing
+                        │
+        ┌───────────────┼────────────────┐
+        ▼               ▼                ▼
+ Summary          Action Items     Sentiment Analysis
+        │               │                │
+        └───────────────┼────────────────┘
+                        ▼
+               Topic Extraction
+                        │
+                        ▼
+          Streamlit Dashboard Output
 ```
 
-meeting-intelligence/
+---
 
+# 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Language | Python |
+| Framework | Streamlit |
+| Machine Learning | scikit-learn |
+| NLP | Regular Expressions, CountVectorizer, TF-IDF |
+| IDE | Visual Studio Code |
+| Version Control | Git & GitHub |
+
+---
+
+# 📂 Project Structure
+
+```text
+AI-Meeting-Intelligence-Assistant/
 │
-
-├── app.py              # Streamlit application
-
-├── main.py             # Command-line application
-
+├── app.py
+├── main.py
 ├── requirements.txt
-
 ├── README.md
-
-└── .gitignore
-
+├── .gitignore
+└── assets/
 ```
 
+---
 
-
-\---
-
-
-
-\## 🚀 Installation
-
-
+# 🚀 Installation
 
 Clone the repository:
 
-
-
 ```bash
-
-git clone https://github.com/Karunya0403/AI--meeting-Intelligence-system.git
-
+git clone https://github.com/Karunya0403/AI-Meeting-Intelligence-Assistant.git
 ```
 
-
-
-Navigate into the project:
-
-
+Navigate to the project folder:
 
 ```bash
-
-cd AI--meeting-Intelligence-system
-
+cd AI-Meeting-Intelligence-Assistant
 ```
 
-
-
-Install dependencies:
-
-
+Install the required packages:
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
-
-
 
 Run the Streamlit application:
 
-
-
 ```bash
-
 streamlit run app.py
-
 ```
 
+---
 
+# 💡 Example Input
 
-\---
-
-
-
-\## 📋 Example Meeting Input
-
-
-
-```
-
+```text
 We discussed the model performance.
 
 John will fix the dataset.
@@ -151,94 +124,110 @@ John will fix the dataset.
 Priya will handle deployment.
 
 The meeting went well.
-
 ```
 
+---
 
+# 📈 Example Output
 
-\---
+### 📌 Summary
 
+```
+We discussed the model performance.
+```
 
+### 📝 Action Items
 
-\## 📊 Output
+- John → Fix the dataset
+- Priya → Handle deployment
 
+### 😊 Sentiment
 
+Positive 😊
 
-\- Meeting Summary
+### 🔑 Key Topics
 
-\- Action Items
+- Model
+- Dataset
+- Deployment
 
-\- Sentiment Score
+---
 
-\- Key Discussion Topics
+# 📸 Screenshots
 
+> Replace these with screenshots after running the application.
 
+## Home Page
 
-\---
+```
+assets/home.png
+```
 
+## Sample Input
 
+```
+assets/input.png
+```
 
-\## 🔮 Future Improvements
+## Analysis Result
 
+```
+assets/output.png
+```
 
+---
 
-\- Transformer-based summarization (BERT/T5)
+# 🔮 Future Enhancements
 
-\- Speech-to-text integration
+- Transformer-based text summarization (BERT/T5)
+- Speech-to-text meeting transcription
+- Large Language Model (LLM) integration
+- Named Entity Recognition (NER)
+- PDF report generation
+- Meeting analytics dashboard
+- Calendar integration
+- Speaker identification
 
-\- Named Entity Recognition
+---
 
-\- PDF and DOCX export
+# 🎯 Learning Outcomes
 
-\- Real-time meeting transcription
+Through this project I gained practical experience with:
 
-\- Calendar integration
+- Natural Language Processing (NLP)
+- Text preprocessing
+- Regular Expressions
+- TF-IDF Feature Extraction
+- CountVectorizer
+- Machine Learning using Logistic Regression
+- Streamlit application development
+- End-to-End AI application development
+- Git & GitHub version control
 
-\- Large Language Model (LLM) support
+---
 
+# 🤝 Contributing
 
+Contributions, suggestions, and improvements are always welcome.
 
-\---
+Feel free to fork the repository and submit a pull request.
 
+---
 
+# 📄 License
 
-\## 📚 Learning Outcomes
+This project is licensed under the **MIT License**.
 
+---
 
+# 👨‍💻 Author
 
-Through this project I gained hands-on experience with:
+**Karunya G K**
 
+B.Tech – Artificial Intelligence and Data Science
 
+Passionate about AI Engineering, Machine Learning, NLP, and Intelligent Automation.
 
-\- Natural Language Processing (NLP)
+📧 **LinkedIn:** *(Add your LinkedIn profile link here)*
 
-\- Text preprocessing
-
-\- Feature extraction using TF-IDF
-
-\- Machine Learning with scikit-learn
-
-\- Streamlit application development
-
-\- Regular expression-based information extraction
-
-
-
-\---
-
-
-
-\## 👤 Author
-
-
-
-\*\*Karunya G K\*\*
-
-
-
-B.Tech Artificial Intelligence and Data Science
-
-
-
-Passionate about AI, NLP, and Machine Learning.
-
+⭐ If you found this project useful, consider giving it a star!
