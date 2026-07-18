@@ -155,27 +155,21 @@ Positive 😊
 
 # 📸 Screenshots
 
-> Replace these with screenshots after running the application.
+## 🏠 Home Page
 
-## Home Page
-
-```
-assets/home.png
-```
-
-## Sample Input
-
-```
-assets/input.png
-```
-
-## Analysis Result
-
-```
-assets/output.png
-```
+![Home Page](assets/home.png)
 
 ---
+
+## ✍️ Sample Meeting Input
+
+![Sample Input](assets/input.png)
+
+---
+
+## 📊 Analysis Results
+
+![Analysis Result](assets/output.png)
 
 # 🔮 Future Enhancements
 
