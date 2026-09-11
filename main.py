@@ -47,6 +47,13 @@ Activate with a click
 
 More details"""
 
+def analyze_emotions(label, text):
+    results = emotion_analyzer(text)
+
+    print_section(f"{label} Emotion Analysis")
+
+    for emotion in sorted(results, key=lambda x: x["score"], reverse=True):
+        print(f'{emotion["label"]}: {emotion["score"]:.3f}')
 
 while True:
     text = input("\nEnter meeting text (type 'exit' to stop):\n")
