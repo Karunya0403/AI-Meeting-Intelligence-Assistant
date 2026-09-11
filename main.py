@@ -1,7 +1,7 @@
 import re
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-
+from transformers import pipeline
 
 def print_section(title):
     print("\n" + "="*8 + f" {title} " + "="*8)
