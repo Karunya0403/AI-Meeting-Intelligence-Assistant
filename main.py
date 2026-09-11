@@ -15,6 +15,38 @@ def print_section(title):
 
 print("=== AI Meeting Intelligence Assistant ===")
 
+control_text = """10 GB for only XX euros every month
+
+Just for you, get 10GB of 4G, 1000 minutes and 1000 SMS every month!
+
+Donʼt miss your only chance to get it all for only %%Renewal_Cost%% euros each month.
+
+Activate by %%End_Due_User%%.
+
+By activating, you accept the TERMS AND CONDITIONS
+
+Active Now
+
+More details"""
+
+persado_text = """10 GB for only XX euros every month
+
+{First_Name}, reward yourself with a special offer!
+
+At only %%Renewal_Cost%% euros each month, youʼll have:
+
+10GB in 4G
+1000 minutes
+1000 SMS
+
+...expires shortly!
+
+By activating, you accept the TERMS AND CONDITIONS
+
+Activate with a click
+
+More details"""
+
 
 while True:
     text = input("\nEnter meeting text (type 'exit' to stop):\n")
