@@ -55,6 +55,9 @@ def analyze_emotions(label, text):
     for emotion in sorted(results, key=lambda x: x["score"], reverse=True):
         print(f'{emotion["label"]}: {emotion["score"]:.3f}')
 
+analyze_emotions("CONTROL", control_text)
+analyze_emotions("PERSADO", persado_text)
+
 while True:
     text = input("\nEnter meeting text (type 'exit' to stop):\n")
 
