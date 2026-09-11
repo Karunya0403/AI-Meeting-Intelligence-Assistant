@@ -1,7 +1,7 @@
 import re
+from transformers import pipeline
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from transformers import pipeline
 
 emotion_analyzer = pipeline(
     "text-classification",
